@@ -1,0 +1,64 @@
+.asideOut {
+ background-image: url("stardust.png");
+}
+
+
+.asideOut {
+float: right;
+width: 500px;
+height:350px;
+border: black solid 4px;
+text-align:left;
+padding-top:none;
+color:white;
+
+}
+
+.asideOut h2 {
+padding-left:10%;
+font-size:22pt;
+}
+
+.asideOut li {
+font-size:170%;
+}
+
+header {
+text-align:center;
+color:white;
+background-color:black;
+height:200px;
+padding:15px;
+
+}
+
+header img {
+float:right;
+height:200px;
+width:230px;
+} 
+
+.headerOne h1 {
+font-size:400%;
+}
+
+.headerOne p {
+font-size:160%
+}
+section ul li {
+font-size: 13pt;
+line-height: 25px;
+}
+
+section {
+border:solid 4px;
+text-align:left;
+padding:0 20px 0 15px;
+}
+
+section {
+background-image: url("halftone.png");
+
+
+
+
