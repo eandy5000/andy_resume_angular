@@ -43,7 +43,10 @@ transform: rotate(8deg);
 }
 
 .headerOne h1 {
-font-size:400%;
+font-size:530%;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-weight:bold;
+margin-bottom:0;
 }
 
 .headerOne p {
