@@ -26,9 +26,9 @@ font-size:170%;
 header {
 text-align:center;
 color:white;
-background-color:black;
 height:200px;
 padding:15px;
+background: linear-gradient(to left, black, gray);
 
 }
 
