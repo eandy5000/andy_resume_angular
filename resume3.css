@@ -26,9 +26,9 @@ font-size:170%;
 header {
 text-align:center;
 color:white;
-background-color:black;
 height:200px;
 padding:15px;
+background: linear-gradient(to left, black, gray);
 
 }
 
@@ -38,8 +38,15 @@ height:200px;
 width:230px;
 } 
 
+header img:hover {
+transform: rotate(8deg);
+}
+
 .headerOne h1 {
-font-size:400%;
+font-size:530%;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-weight:bold;
+margin-bottom:0;
 }
 
 .headerOne p {
