@@ -9,7 +9,7 @@ a {
 a:hover {
  
  color:red;
- transform:rotate(8deg);
+
 }
 
 
@@ -49,8 +49,7 @@ background: linear-gradient(to left, black, gray);
 
 header img {
 float:right;
-height:200px;
-width:230px;
+
 } 
 
 header img:hover {
