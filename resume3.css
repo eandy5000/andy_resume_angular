@@ -8,8 +8,8 @@ a {
 
 a:hover {
  
- color:red;
- transform: scale (1.2);
+ color:linear-gradient(to center, red, white);
+
 
 }
 
