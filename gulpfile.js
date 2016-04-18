@@ -4,10 +4,10 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     uglify = require('gulp-uglify');
     
-gulp.task('default', []);
+gulp.task('default', ['comboSass','sass','watch']);
 
 gulp.task('watch', function () {
-    gulp.watch('client/styles/scss/*scss',['comboSass']);
+    gulp.watch('client/styles/scss/*scss', ['comboSass','sass']);
 });
 
 gulp.task('comboSass', function () {
@@ -17,6 +17,7 @@ gulp.task('comboSass', function () {
 });
 
 gulp.task('sass', function (){
-   return sass('client/styles/style.scss');
+   return sass('client/styles/style.scss')
    // change when config public 
+          .pipe(gulp.dest('client/styles/'));
 });
