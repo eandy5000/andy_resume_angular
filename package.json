@@ -2,16 +2,18 @@
   "name": "dobble",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.5",
     "angular-route": "^1.5.5",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
