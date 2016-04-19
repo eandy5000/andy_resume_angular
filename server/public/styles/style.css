@@ -5679,8 +5679,12 @@ footer {
 
 .logo {
   height: 64px;
-  width: 64px; }
+  width: auto; }
 
 .project-logo {
   height: 240px;
-  width: 120px; }
+  width: auto; }
+
+.tabby a {
+  background-color: rgba(194, 54, 54, 0.45);
+  color: #333; }

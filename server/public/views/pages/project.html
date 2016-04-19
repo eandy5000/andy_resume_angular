@@ -69,8 +69,15 @@
 
       <div class="col-md-6">
         <h3>Technologies</h3>
-      <ul>
-        <li class="media">
+        <ul class = "nav nav-tabs tabby" ng-init= "tab = 1">
+            <li ng-class="{active: tab === 1}"><a href ng-click="tab = 1">Frameworks</a></li>
+            <li ng-class="{active: tab === 2}"><a href ng-click="tab = 2"> Development Tools</a></li>
+            <li ng-class="{active: tab === 3}"><a href ng-click="tab = 3">Databases</a></li>
+        </ul>
+        
+        <div ng-show="tab === 1" class="well">
+            <ul>
+         <li class="media">
           <div class="media-left">
             <a href="#">
               <img class="media-object logo" src="../views/images/MEAN.png" alt="Logo">
@@ -82,34 +89,34 @@
               Mongo DB, Angular, Express, Node
             </p>
           </div>
-        </li>
-        <li class="media">
+        </li>   
+              <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                    <img class="media-object logo" src="../views/images/angular.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Angular js</h4>
+                    <p>
+                    Javascript Framework
+                    </p>
+                </div>
+              </li>
+         <li class="media">
           <div class="media-left">
             <a href="#">
-              <img class="media-object logo" src="../views/images/Octocat.png" alt="Logo">
+              <img class="media-object logo" src="../views/images/express.jpg" alt="Logo">
             </a>
           </div>
           <div class="media-body">
-            <h4 class="media-heading">Git & Github</h4>
+            <h4 class="media-heading">Node & Express</h4>
             <p>
-              Version Control
+              Web Applicaiton Framework
             </p>
           </div>
         </li>
-        <li class="media">
-          <div class="media-left">
-            <a href="#">
-              <img class="media-object logo" src="../views/images/grunt.png" alt="Logo">
-            </a>
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Grunt</h4>
-            <p>
-              Javascript Task Runner
-            </p>
-          </div>
-        </li>
-        <li class="media">
+                <li class="media">
           <div class="media-left">
             <a href="#">
               <img class="media-object logo" src="../views/images/jquery.png" alt="Logo">
@@ -122,16 +129,47 @@
             </p>
           </div>
         </li>
-        <li class="media">
+            </ul>
+        </div>
+        
+        <div class="well" ng-show="tab===2">
+            <ul>
+                <li class="media">
           <div class="media-left">
             <a href="#">
-              <img class="media-object logo" src="../views/images/postgress.png" alt="Logo">
+              <img class="media-object logo" src="../views/images/Octocat.png" alt="Logo">
             </a>
           </div>
           <div class="media-body">
-            <h4 class="media-heading">PostgreSQL</h4>
+            <h4 class="media-heading">Git & Github</h4>
             <p>
-              Opensource SQL Database
+              Version Control
+            </p>
+          </div>
+        </li>
+         <li class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object logo" src="../views/images/gulp.png" alt="Logo">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Gulp</h4>
+            <p>
+              Build System
+            </p>
+          </div>
+        </li>
+                <li class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object logo" src="../views/images/grunt.png" alt="Logo">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Grunt</h4>
+            <p>
+              Javascript Task Runner
             </p>
           </div>
         </li>
@@ -148,8 +186,41 @@
             </p>
           </div>
         </li>
-      </ul>
+            </ul>
+            
+        </div>
+        
+     <div class="well" ng-show="tab === 3">  
+      <ul>
 
+         <li class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object logo" src="../views/images/mongo.png" alt="Logo">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Mongodb</h4>
+            <p>
+              NoSQL Database
+            </p>
+          </div>
+        </li>
+               <li class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object logo" src="../views/images/postgress.png" alt="Logo">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">PostgreSQL</h4>
+            <p>
+              Opensource SQL Database
+            </p>
+          </div>
+        </li>
+      </ul>
+</div> 
 
 
       </div>

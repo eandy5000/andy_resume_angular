@@ -4,7 +4,11 @@
     
     // controllers
     app.controller('MainCtrl',[function(){
-        console.log('working');
+        
+    }]);
+    
+    app.controller('ProjectsCtrl', ['$scope',function($scope){
+        $scope.tab = 1;
     }]);
     
     
@@ -17,7 +21,7 @@
             })
             .when('/projects', {
                templateUrl : '../views/pages/project.html',
-               controller : 'MainCtrl' 
+               controller : 'ProjectsCtrl' 
             })
             .otherwise({
                 templateUrl : '../views/pages/home.html',
