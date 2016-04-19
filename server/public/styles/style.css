@@ -5665,7 +5665,7 @@ body {
   line-height: 175%; }
 
 footer {
-  background-color: #092f96;
+  background-color: #333;
   color: #fff;
   text-align: center;
   padding-top: 20px;
@@ -5688,3 +5688,6 @@ footer {
 .tabby a {
   background-color: rgba(194, 54, 54, 0.45);
   color: #333; }
+
+.title {
+  margin-bottom: 20px; }

@@ -18,7 +18,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h3>Education</h3>
+        <h3 class="title">Education</h3>
         <ul class="media-list">
           <li class="media">
             <div class="media-left">
@@ -68,14 +68,14 @@
       </div>
 
       <div class="col-md-6">
-        <h3>Technologies</h3>
-        <ul class = "nav nav-tabs tabby" ng-init= "tab = 1">
-            <li ng-class="{active: tab === 1}"><a href ng-click="tab = 1">Frameworks</a></li>
-            <li ng-class="{active: tab === 2}"><a href ng-click="tab = 2"> Development Tools</a></li>
-            <li ng-class="{active: tab === 3}"><a href ng-click="tab = 3">Databases</a></li>
+        <h3 class="title">Technologies</h3>
+        <ul class = "nav nav-tabs tabby" >
+            <li ng-class="{active: checkTab(1)}"><a href ng-click="setTab(1)">Frameworks</a></li>
+            <li ng-class="{active: checkTab(2)}"><a href ng-click="setTab(2)"> Development Tools</a></li>
+            <li ng-class="{active: checkTab(3)}"><a href ng-click="setTab(3)">Databases</a></li>
         </ul>
         
-        <div ng-show="tab === 1" class="well">
+        <div ng-show="checkTab(1)" class="well">
             <ul>
          <li class="media">
           <div class="media-left">
@@ -132,7 +132,7 @@
             </ul>
         </div>
         
-        <div class="well" ng-show="tab===2">
+        <div class="well" ng-show="checkTab(2)">
             <ul>
                 <li class="media">
           <div class="media-left">
@@ -190,7 +190,7 @@
             
         </div>
         
-     <div class="well" ng-show="tab === 3">  
+     <div class="well" ng-show="checkTab(3)">  
       <ul>
 
          <li class="media">
